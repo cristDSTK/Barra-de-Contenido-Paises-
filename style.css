@@ -1,0 +1,183 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Lexend+Deca:wght@100..900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: rgb(49, 47, 47);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Lexend Deca", sans-serif;
+}
+
+.card {
+    width: 1200px;
+    height: 700px;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    transition: .4s;
+}
+.card__nav {
+    border-radius: 10px;
+    background-color: #f8f7f6;
+    width: 30%;
+    height: 100%;
+    box-shadow: 0 0 10px #666;
+    display: grid;
+    grid-template-rows: repeat(5, 90px);
+}
+.card__nav a {
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: .4s;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: gray;
+    &:hover {
+        color: black;
+    }
+}
+#chile:hover {
+    background-color: rgb(212, 18, 18, 0.2);
+}
+#chile:focus {
+    background-color: rgb(212, 18, 18, 0.2);
+    color: black;
+}
+
+#argentina:hover {
+    background-color: rgba(47, 108, 222, 0.2);
+}
+#argentina:focus {
+    background-color: rgba(47, 108, 222, 0.2);
+    color: black;
+}
+
+#colombia:hover {
+    background-color: rgb(227, 227, 24, 0.2);
+}
+#colombia:focus {
+    background-color: rgb(227, 227, 24, 0.2);
+    color: black;
+}
+
+#bolivia:hover {
+    background-color: rgb(17, 170, 17, 0.2);
+}
+#bolivia:focus {
+    background-color: rgb(17, 170, 17, 0.2);
+    color: black;
+}
+
+#uruguay:hover {
+    background-color: rgb(114, 144, 201, 0.2);
+}
+#uruguay:focus {
+    background-color: rgb(114, 144, 201, 0.2);
+    color: black;
+}
+
+
+
+.card__description {
+    width: 70%;
+    border-radius: 0 10px 10px 0;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 50px;
+}
+.card__description h1 {
+    font-size: 50px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+    color: rgb(40, 40, 40);
+}
+.card__description p {
+    line-height: 30px;
+    color: rgb(63, 63, 63);
+}
+.card__description img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 50px 0 0 0;
+    box-shadow:  0 0 10px #666;
+}
+
+
+
+@media screen and (max-width:1200px){
+    .card {
+        width: 1000px;
+        transition: .4s;
+    }
+}
+
+
+
+
+@media screen and (max-width:1000px){
+    .card {
+        width: 700px;
+        transition: .4s;
+    }
+    .card__description img {
+        height: 200px;
+        transition: .4s;
+        margin-top: 20px;
+    }
+}
+
+
+
+@media screen and (max-width:700px){
+    .card {
+        width: 350px;
+        transition: .4s;
+        height: 800px;
+        flex-direction: column-reverse;
+    }
+    .card__description img {
+        height: 200px;
+        transition: .4s;
+    }
+    .card__description {
+        width: 100%;
+        height: 61%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .card__description h1 {
+        font-size: 28px;
+        margin-bottom: 20px;
+    }
+    .card__description p {
+        font-size: 13px;
+        line-height: 23px;
+    }
+    .card__nav {
+        width: 100%;
+        height: 39%;
+        grid-template-rows: repeat(5, 60px);
+    }
+    .card__nav a {
+        font-size: 15px;
+    }
+    .card__description img {
+        height: 130px;
+        margin-top: 15px;
+    }
+}
+
